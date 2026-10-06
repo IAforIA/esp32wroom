@@ -9,7 +9,10 @@ The repository keeps every step, not just the final game: the display bring-up
 test, the touch test with auto-calibration, the game, and the notes on how I
 solved the USB driver problem on the way.
 
-![Assembled board and display](docs/images/assembled.jpg)
+![Snake running on the finished build](docs/images/snake-running.jpg)
+
+*Snake running on the assembled board: ESP32-WROOM held on the helping hands,
+the touchscreen in hand, playing with the score and high score on top.*
 
 ---
 
@@ -69,6 +72,10 @@ The connector labels are printed on the display's pin header:
 | Board + display header labels | Display back (controller + SD slot) |
 |---|---|
 | ![Board and display pins](docs/images/board-and-display-pins.jpg) | ![Display back](docs/images/display-back.jpg) |
+
+The assembled wiring (display and touch connected, ESP32 on the helping hands):
+
+![Assembled hardware](docs/images/assembled.jpg)
 
 ---
 
