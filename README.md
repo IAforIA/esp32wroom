@@ -9,15 +9,18 @@ The repository keeps every step, not just the final game: the display bring-up
 test, the touch test with auto-calibration, the game, and the notes on how I
 solved the USB driver problem on the way.
 
+![Snake gameplay](docs/images/snake-demo.gif)
+
+*Playing Snake on the assembled board (score climbing from 6 to 9).*
+
 ![Snake running on the finished build](docs/images/snake-running.jpg)
 
-*Snake running on the assembled board: ESP32-WROOM held on the helping hands,
-the touchscreen in hand, with the score and high score on top.*
+*The build: ESP32-WROOM held on the helping hands, the touchscreen in hand.*
 
-> \* The on-screen labels in this photo (*Pontos*, *Rec*) are in Portuguese —
-> the author's native language — because it was captured before the interface
-> strings were translated to English. The current firmware shows *Score* and
-> *Best*.
+> \* The on-screen labels in the clip and photo above (*Pontos*, *Rec*) are in
+> Portuguese — the author's native language — because they were captured before
+> the interface strings were translated to English. The current firmware shows
+> *Score* and *Best*.
 
 ---
 
