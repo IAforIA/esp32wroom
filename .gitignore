@@ -1,0 +1,17 @@
+# PlatformIO build output (regenerated, ~60 MB each)
+.pio/
+**/.pio/
+
+# PlatformIO / IDE
+.vscode/
+.pioenvs/
+.piolibdeps/
+
+# Driver: large binaries (the extracted INF and scripts are kept)
+drivers/CP210x.cab
+drivers/*.log
+
+# OS
+Thumbs.db
+desktop.ini
+*.tmp

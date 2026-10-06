@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <!-- panel background (keeps it readable on light and dark themes) -->
+  <rect x="0" y="0" width="960" height="720" rx="14" fill="#FAFAFA" stroke="#D0D7DE" stroke-width="2"/>
+
+  <!-- title -->
+  <text x="480" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#1B2733">ESP32-WROOM-32  &#8596;  2.4" ILI9341 (ILI9341 + XPT2046)</text>
+  <text x="480" y="74" text-anchor="middle" font-size="15" fill="#54626F">Display on VSPI · Touch on a dedicated HSPI bus · setRotation(3) · 240&#215;320</text>
+
+  <!-- board names -->
+  <text x="200" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#1B2733">ESP32-WROOM-32</text>
+  <text x="760" y="110" text-anchor="middle" font-size="18" font-weight="700" fill="#1B2733">ILI9341 2.4" TFT</text>
+
+  <!-- boards -->
+  <rect x="110" y="120" width="180" height="492" rx="12" fill="#2E3B4E"/>
+  <rect x="710" y="120" width="180" height="492" rx="12" fill="#C62828"/>
+
+  <!-- bus divider between display (above) and touch (below) -->
+  <line x1="300" y1="420" x2="700" y2="420" stroke="#9AA7B1" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="500" y="414" text-anchor="middle" font-size="12" fill="#54626F">VSPI — display bus</text>
+  <text x="500" y="436" text-anchor="middle" font-size="12" fill="#54626F">HSPI — touch bus</text>
+
+  <!-- ===== Row 1: 3V3 - VCC (power) ===== -->
+  <line x1="290" y1="150" x2="710" y2="150" stroke="#E53935" stroke-width="3"/>
+  <circle cx="290" cy="150" r="5" fill="#E53935"/><circle cx="710" cy="150" r="5" fill="#E53935"/>
+  <text x="282" y="155" text-anchor="end" font-size="15" fill="#FFFFFF">3V3</text>
+  <text x="718" y="155" text-anchor="start" font-size="15" fill="#FFFFFF">VCC</text>
+  <text x="500" y="144" text-anchor="middle" font-size="13" fill="#263238">3.3 V</text>
+
+  <!-- Row 2: GND - GND -->
+  <line x1="290" y1="186" x2="710" y2="186" stroke="#78909C" stroke-width="3"/>
+  <circle cx="290" cy="186" r="5" fill="#78909C"/><circle cx="710" cy="186" r="5" fill="#78909C"/>
+  <text x="282" y="191" text-anchor="end" font-size="15" fill="#FFFFFF">GND</text>
+  <text x="718" y="191" text-anchor="start" font-size="15" fill="#FFFFFF">GND</text>
+  <text x="500" y="180" text-anchor="middle" font-size="13" fill="#263238">GND</text>
+
+  <!-- Row 3: D15 - CS -->
+  <line x1="290" y1="222" x2="710" y2="222" stroke="#1E88E5" stroke-width="3"/>
+  <circle cx="290" cy="222" r="5" fill="#1E88E5"/><circle cx="710" cy="222" r="5" fill="#1E88E5"/>
+  <text x="282" y="227" text-anchor="end" font-size="15" fill="#FFFFFF">D15</text>
+  <text x="718" y="227" text-anchor="start" font-size="15" fill="#FFFFFF">CS</text>
+  <text x="500" y="216" text-anchor="middle" font-size="13" fill="#263238">CS (chip select)</text>
+
+  <!-- Row 4: D4 - RESET -->
+  <line x1="290" y1="258" x2="710" y2="258" stroke="#1E88E5" stroke-width="3"/>
+  <circle cx="290" cy="258" r="5" fill="#1E88E5"/><circle cx="710" cy="258" r="5" fill="#1E88E5"/>
+  <text x="282" y="263" text-anchor="end" font-size="15" fill="#FFFFFF">D4</text>
+  <text x="718" y="263" text-anchor="start" font-size="15" fill="#FFFFFF">RESET</text>
+  <text x="500" y="252" text-anchor="middle" font-size="13" fill="#263238">RESET</text>
+
+  <!-- Row 5: D2 - DC -->
+  <line x1="290" y1="294" x2="710" y2="294" stroke="#1E88E5" stroke-width="3"/>
+  <circle cx="290" cy="294" r="5" fill="#1E88E5"/><circle cx="710" cy="294" r="5" fill="#1E88E5"/>
+  <text x="282" y="299" text-anchor="end" font-size="15" fill="#FFFFFF">D2</text>
+  <text x="718" y="299" text-anchor="start" font-size="15" fill="#FFFFFF">DC</text>
+  <text x="500" y="288" text-anchor="middle" font-size="13" fill="#263238">DC (data/command)</text>
+
+  <!-- Row 6: D23 - SDI/MOSI -->
+  <line x1="290" y1="330" x2="710" y2="330" stroke="#1E88E5" stroke-width="3"/>
+  <circle cx="290" cy="330" r="5" fill="#1E88E5"/><circle cx="710" cy="330" r="5" fill="#1E88E5"/>
+  <text x="282" y="335" text-anchor="end" font-size="15" fill="#FFFFFF">D23</text>
+  <text x="718" y="335" text-anchor="start" font-size="15" fill="#FFFFFF">SDI (MOSI)</text>
+  <text x="500" y="324" text-anchor="middle" font-size="13" fill="#263238">MOSI</text>
+
+  <!-- Row 7: D18 - SCK -->
+  <line x1="290" y1="366" x2="710" y2="366" stroke="#1E88E5" stroke-width="3"/>
+  <circle cx="290" cy="366" r="5" fill="#1E88E5"/><circle cx="710" cy="366" r="5" fill="#1E88E5"/>
+  <text x="282" y="371" text-anchor="end" font-size="15" fill="#FFFFFF">D18</text>
+  <text x="718" y="371" text-anchor="start" font-size="15" fill="#FFFFFF">SCK</text>
+  <text x="500" y="360" text-anchor="middle" font-size="13" fill="#263238">SCK (clock)</text>
+
+  <!-- Row 8: D5 - LED (backlight) -->
+  <line x1="290" y1="402" x2="710" y2="402" stroke="#FB8C00" stroke-width="3"/>
+  <circle cx="290" cy="402" r="5" fill="#FB8C00"/><circle cx="710" cy="402" r="5" fill="#FB8C00"/>
+  <text x="282" y="407" text-anchor="end" font-size="15" fill="#FFFFFF">D5</text>
+  <text x="718" y="407" text-anchor="start" font-size="15" fill="#FFFFFF">LED</text>
+  <text x="500" y="396" text-anchor="middle" font-size="13" fill="#263238">Backlight</text>
+
+  <!-- Row 9: D14 - T_CLK (touch) -->
+  <line x1="290" y1="456" x2="710" y2="456" stroke="#8E24AA" stroke-width="3"/>
+  <circle cx="290" cy="456" r="5" fill="#8E24AA"/><circle cx="710" cy="456" r="5" fill="#8E24AA"/>
+  <text x="282" y="461" text-anchor="end" font-size="15" fill="#FFFFFF">D14</text>
+  <text x="718" y="461" text-anchor="start" font-size="15" fill="#FFFFFF">T_CLK</text>
+  <text x="500" y="450" text-anchor="middle" font-size="13" fill="#263238">Touch clock</text>
+
+  <!-- Row 10: D13 - T_DIN -->
+  <line x1="290" y1="492" x2="710" y2="492" stroke="#8E24AA" stroke-width="3"/>
+  <circle cx="290" cy="492" r="5" fill="#8E24AA"/><circle cx="710" cy="492" r="5" fill="#8E24AA"/>
+  <text x="282" y="497" text-anchor="end" font-size="15" fill="#FFFFFF">D13</text>
+  <text x="718" y="497" text-anchor="start" font-size="15" fill="#FFFFFF">T_DIN</text>
+  <text x="500" y="486" text-anchor="middle" font-size="13" fill="#263238">Touch MOSI</text>
+
+  <!-- Row 11: D27 - T_DO -->
+  <line x1="290" y1="528" x2="710" y2="528" stroke="#8E24AA" stroke-width="3"/>
+  <circle cx="290" cy="528" r="5" fill="#8E24AA"/><circle cx="710" cy="528" r="5" fill="#8E24AA"/>
+  <text x="282" y="533" text-anchor="end" font-size="15" fill="#FFFFFF">D27</text>
+  <text x="718" y="533" text-anchor="start" font-size="15" fill="#FFFFFF">T_DO</text>
+  <text x="500" y="522" text-anchor="middle" font-size="13" fill="#263238">Touch MISO</text>
+
+  <!-- Row 12: D33 - T_CS -->
+  <line x1="290" y1="564" x2="710" y2="564" stroke="#8E24AA" stroke-width="3"/>
+  <circle cx="290" cy="564" r="5" fill="#8E24AA"/><circle cx="710" cy="564" r="5" fill="#8E24AA"/>
+  <text x="282" y="569" text-anchor="end" font-size="15" fill="#FFFFFF">D33</text>
+  <text x="718" y="569" text-anchor="start" font-size="15" fill="#FFFFFF">T_CS</text>
+  <text x="500" y="558" text-anchor="middle" font-size="13" fill="#263238">Touch chip select</text>
+
+  <!-- Row 13: D32 - T_IRQ -->
+  <line x1="290" y1="600" x2="710" y2="600" stroke="#8E24AA" stroke-width="3"/>
+  <circle cx="290" cy="600" r="5" fill="#8E24AA"/><circle cx="710" cy="600" r="5" fill="#8E24AA"/>
+  <text x="282" y="605" text-anchor="end" font-size="15" fill="#FFFFFF">D32</text>
+  <text x="718" y="605" text-anchor="start" font-size="15" fill="#FFFFFF">T_IRQ</text>
+  <text x="500" y="594" text-anchor="middle" font-size="13" fill="#263238">Touch IRQ</text>
+
+  <!-- legend -->
+  <g font-size="13" fill="#263238">
+    <rect x="150" y="648" width="16" height="16" rx="3" fill="#E53935"/><text x="172" y="661">Power</text>
+    <rect x="240" y="648" width="16" height="16" rx="3" fill="#78909C"/><text x="262" y="661">GND</text>
+    <rect x="320" y="648" width="16" height="16" rx="3" fill="#1E88E5"/><text x="342" y="661">Display SPI (VSPI)</text>
+    <rect x="500" y="648" width="16" height="16" rx="3" fill="#FB8C00"/><text x="522" y="661">Backlight</text>
+    <rect x="610" y="648" width="16" height="16" rx="3" fill="#8E24AA"/><text x="632" y="661">Touch SPI (HSPI)</text>
+  </g>
+</svg>
