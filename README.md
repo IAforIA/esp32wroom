@@ -12,7 +12,12 @@ solved the USB driver problem on the way.
 ![Snake running on the finished build](docs/images/snake-running.jpg)
 
 *Snake running on the assembled board: ESP32-WROOM held on the helping hands,
-the touchscreen in hand, playing with the score and high score on top.*
+the touchscreen in hand, with the score and high score on top.*
+
+> \* The on-screen labels in this photo (*Pontos*, *Rec*) are in Portuguese —
+> the author's native language — because it was captured before the interface
+> strings were translated to English. The current firmware shows *Score* and
+> *Best*.
 
 ---
 
